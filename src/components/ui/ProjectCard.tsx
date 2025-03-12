@@ -1,4 +1,4 @@
-import { ProjectCard as ProjectCardProps } from "@/projects";
+import { ProjectCard as ProjectCardProps } from "@/components/information/projects";
 import {
   Card,
   CardContent,
@@ -30,30 +30,21 @@ const ProjectCard = (props: ProjectCardProps) => {
         <DisplayTags tags={props.tags} />
       </CardContent>
       <CardFooter className="flex space-x-1">
-        <Button className="hover:cursor-pointer">More Details</Button>
         {props.liveUrl && (
-          <Button variant="outline" className="hover:cursor-pointer">
-            <ExternalLink />
-            <a
-              href="https://google.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <a href={props.liveUrl} target="_blank" rel="noopener noreferrer">
+            <Button variant="outline" className="hover:cursor-pointer">
+              <ExternalLink />
               Live Demo
-            </a>
-          </Button>
+            </Button>
+          </a>
         )}
         {props.githubUrl && (
-          <Button variant="outline" className="hover:cursor-pointer">
-            <Github />
-            <a
-              href="https://google.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <a href={props.githubUrl} target="_blank" rel="noopener noreferrer">
+            <Button variant="outline" className="hover:cursor-pointer">
+              <Github />
               Github
-            </a>
-          </Button>
+            </Button>
+          </a>
         )}
       </CardFooter>
     </Card>

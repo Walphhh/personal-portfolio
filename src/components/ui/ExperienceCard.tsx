@@ -1,3 +1,4 @@
+import { Separator } from "./separator";
 import {
   Card,
   CardContent,
@@ -6,7 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "./card";
-import { ExperienceCard as ExperienceCardInterface } from "@/experience";
+import { ExperienceCard as ExperienceCardInterface } from "@/components/information/experience";
 
 const ExperienceCard = (props: ExperienceCardInterface) => {
   const previousPositions = props.positions;
@@ -17,7 +18,7 @@ const ExperienceCard = (props: ExperienceCardInterface) => {
           <div className="flex space-x-5">
             <div className="company-logo">
               <img
-                src="src\assets\sillycat.jpg"
+                src={props.companyLogo || "srcassetssillycat.jpg"}
                 alt="placeholder"
                 className="w-15 h-15"
               />
@@ -26,8 +27,12 @@ const ExperienceCard = (props: ExperienceCardInterface) => {
               <div>
                 <CardTitle className="text-xl">{props.position}</CardTitle>
               </div>
-              <div className="flex space-x-5">
+              <div className="flex space-x-2">
                 <div>{props.company}</div>
+                <Separator
+                  orientation="vertical"
+                  className="min-w-0.5  bg-gray-700"
+                />
                 <div>{props.location}</div>
               </div>
             </div>
