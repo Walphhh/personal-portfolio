@@ -1,9 +1,6 @@
-import React from "react";
-import { Button } from "../ui/button";
-
 const Navbar = () => {
   return (
-    <div className="flex h-16 bg-amber-200 items-center ">
+    <div className="flex h-16 w-full bg-amber-200 items-center ">
       <nav className="w-full">
         <ul className="flex justify-between">
           <li>Item One</li>
