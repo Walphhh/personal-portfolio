@@ -1,4 +1,4 @@
-import { TagTypes } from "@/projects";
+import { TagTypes } from "@/components/information/projects";
 import { Badge } from "../ui/badge";
 interface tags {
   tags: TagTypes[];

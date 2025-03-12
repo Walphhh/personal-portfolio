@@ -1,8 +1,8 @@
 import React from "react";
 import Fullscreen from "../ui/Fullscreen";
 import ExperienceCard from "../ui/ExperienceCard";
-import { ExperienceCard as ExperienceCardInterface } from "@/experience";
-import { experience } from "@/experience";
+import { ExperienceCard as ExperienceCardInterface } from "@/components/information/experience";
+import { experience } from "@/components/information/experience";
 
 const Experience = () => {
   return (
