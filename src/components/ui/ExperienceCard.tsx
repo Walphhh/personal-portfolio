@@ -1,0 +1,61 @@
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "./card";
+import { ExperienceCard as ExperienceCardInterface } from "@/experience";
+
+const ExperienceCard = (props: ExperienceCardInterface) => {
+  const previousPositions = props.positions;
+  return (
+    <Card className="max-w-250 p5">
+      <CardHeader>
+        <div className="flex justify-between">
+          <div className="flex space-x-5">
+            <div className="company-logo">
+              <img
+                src="src\assets\sillycat.jpg"
+                alt="placeholder"
+                className="w-15 h-15"
+              />
+            </div>
+            <div className="flex flex-col justify-between">
+              <div>
+                <CardTitle className="text-xl">{props.position}</CardTitle>
+              </div>
+              <div className="flex space-x-5">
+                <div>{props.company}</div>
+                <div>{props.location}</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="duration">
+            <h1>{props.duration}</h1>
+          </div>
+        </div>
+      </CardHeader>
+      <CardContent>
+        <CardDescription>{props.description}</CardDescription>
+      </CardContent>
+      {previousPositions &&
+        previousPositions.map((position) => {
+          return (
+            <div className="p-5 ms-10 space-y-1">
+              <div className="flex justify-between">
+                <CardTitle>{position.position}</CardTitle>
+                <h1>{position.duration}</h1>
+              </div>
+              <CardDescription>{position.description}</CardDescription>
+            </div>
+          );
+        })}
+      <CardFooter>Footer Here</CardFooter>
+    </Card>
+  );
+};
+
+export default ExperienceCard;
