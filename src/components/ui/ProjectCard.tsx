@@ -27,11 +27,6 @@ const ProjectCard = (props: ProjectCardProps) => {
         <CardDescription>{props.description}</CardDescription>
       </CardHeader>
       <CardContent>
-        {/* <div className="flex space-x-1">
-          {props.tags.map((tag) => {
-            return <Badge variant={"secondary"}>{tag}</Badge>;
-          })}
-        </div> */}
         <DisplayTags tags={props.tags} />
       </CardContent>
       <CardFooter className="flex space-x-1">
