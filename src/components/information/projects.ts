@@ -6,7 +6,8 @@ export type TagTypes =
   | "Bootstrap"
   | "ChakraUI"
   | "Express"
-  | "Typescript";
+  | "Typescript"
+  | "Tailwind";
 
 export interface ProjectCard {
   title: string;
@@ -39,7 +40,7 @@ export const projects: ProjectCard[] = [
     title: "Portfolio Website",
     description: "A website showcasing my portfolio",
     imgSrc: "src/assets/portfolio_snapshot.png",
-    tags: ["React", "Typescript"],
+    tags: ["React", "Typescript", "Tailwind"],
     githubUrl: "",
   },
   {
