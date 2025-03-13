@@ -11,9 +11,16 @@ const Experience = () => {
         <div className="flex justify-center">
           <h1 className="text-4xl font-bold">My Experience</h1>
         </div>
-        {experience.map((experience) => {
-          return <ExperienceCard {...experience} />;
-        })}
+        <div className="flex">
+          <div className="flex-col">
+            <div className="relative left-3 pt- h-full w-1 z-0 bg-gray-300 rounded-b-lg" />
+          </div>
+          <div className="space-y-5 z-10">
+            {experience.map((experience) => {
+              return <ExperienceCard {...experience} />;
+            })}
+          </div>
+        </div>
       </div>
     </Fullscreen>
   );
