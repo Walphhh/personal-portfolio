@@ -5,7 +5,7 @@ import { projects } from "@/components/information/projects";
 
 const Projects = () => {
   return (
-    <Fullscreen className="p-8 space-y-10 px-8 lg:px-48 ">
+    <Fullscreen className=" bg-amber-50 p-8 space-y-10 px-8 lg:px-48 ">
       <div className="flex justify-center">
         <h1 className="text-4xl font-bold">My Projects</h1>
       </div>
