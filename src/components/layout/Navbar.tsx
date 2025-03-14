@@ -1,8 +1,14 @@
-const Navbar = () => {
+interface NavbarProps {
+  className?: string;
+}
+
+const Navbar = ({ className }: NavbarProps) => {
   return (
-    <div className="flex h-16 w-full bg-amber-200 items-center ">
+    <div
+      className={`w-dvw flex h-16 px-20 bg-amber-200 items-center ${className}`}
+    >
       <nav className="w-full">
-        <ul className="flex justify-between">
+        <ul className="flex space-x-24 justify-end">
           <li>Item One</li>
           <li>Item Two</li>
           <li>Item Three</li>

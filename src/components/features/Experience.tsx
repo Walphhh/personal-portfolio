@@ -9,15 +9,17 @@ const Experience = () => {
     <Fullscreen className="p-5 flex justify-center">
       <div className="space-y-5">
         <div className="flex justify-center">
-          <h1 className="text-4xl font-bold">My Experience</h1>
+          <h1 className="text-4xl font-bold underline">My Experience</h1>
         </div>
         <div className="flex">
           <div className="flex-col">
             <div className="relative left-3 pt- h-full w-1 z-0 bg-gray-300 rounded-b-lg" />
           </div>
-          <div className="space-y-5 z-10">
+          <div className=" space-y-5 z-10">
             {experience.map((experience) => {
-              return <ExperienceCard {...experience} />;
+              return (
+                <ExperienceCard key={experience.position} {...experience} />
+              );
             })}
           </div>
         </div>

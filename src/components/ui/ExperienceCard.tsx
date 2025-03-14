@@ -17,7 +17,7 @@ const ExperienceCard = (props: ExperienceCardInterface) => {
       <div className="left-60  h-5 w-5 rounded-full border border-border bg-background flex items-center justify-center">
         <Briefcase className="h-10 w-10 text-primary" />
       </div>
-      <Card className="max-w-250 p5">
+      <Card className="bg-background-1 max-w-250 p5">
         <CardHeader>
           <div className="flex justify-between">
             <div className="flex space-x-5">

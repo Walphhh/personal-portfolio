@@ -6,11 +6,7 @@ interface FullscreenProps {
 }
 
 const Fullscreen = ({ children, className }: FullscreenProps) => {
-  return (
-    <div className={`w-full min-h-[calc(100vh-4rem)] ${className}`}>
-      {children}
-    </div>
-  );
+  return <div className={`w-full min-h-dvh ${className}`}>{children}</div>;
 };
 
 export default Fullscreen;
