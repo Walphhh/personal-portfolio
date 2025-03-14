@@ -21,28 +21,29 @@ const Technologies = () => {
   };
 
   return (
-    <div className="flex justify-center">
+    <Fullscreen className="flex min-h-180 justify-center p-5">
       <div className="space-y-10 flex flex-col items-center">
         <h1 className="text-4xl font-semibold underline drop-shadow-md">
           Technologies I've Worked With
         </h1>
-        <div className="flex space-x-5 p-3 bg-background-1 rounded-xl shadow-md">
+        <div className="flex p-3 bg-background-1 rounded-xl shadow-md">
           {technologyTypes.map((name) => {
             return (
               <button
                 onClick={() => handleHighlight(name)}
                 id="name"
                 className={`hover:cursor-pointer p-2 px-4 rounded-xl drop-shadow-md ${
-                  highlited === name && `bg-optionHighlight`
+                  highlited === name &&
+                  `bg-optionHighlight text-highlightDefault`
                 }`}
               >
-                <h1 className="font-semibold">{name}</h1>
+                <h1 className="font-semibold ">{name}</h1>
               </button>
             );
           })}
         </div>
-        <div className=" max-w-4xl p-5 bg-background-1 rounded-xl shadow-md">
-          <div className="grid grid-cols-5 gap-5">
+        <div className=" max-w-6xl p-10 bg-background-1 rounded-xl shadow-md">
+          <div className="grid lg:grid-cols-4 gap-5 sm:grid-cols-3">
             {highlited === "All" ? (
               <>
                 {technologyList.map((technology) => {
@@ -63,7 +64,7 @@ const Technologies = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Fullscreen>
   );
 };
 
