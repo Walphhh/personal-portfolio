@@ -1,4 +1,4 @@
-import { TagTypes } from "./projects";
+import { TagTypes } from "./projectsList";
 
 type experienceType = "work" | "study;";
 
