@@ -133,6 +133,7 @@
   --color-outline: #fcfcfc;
   --color-whiteBorder: #fcfcfc;
   --color-highlightDefault: #242424;
+  --color-fontHighlight: #242424;
 }
 
 @layer theme {

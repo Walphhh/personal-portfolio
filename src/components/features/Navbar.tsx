@@ -1,4 +1,4 @@
-import ThemeToggle from "../features/ThemeToggle";
+import ThemeToggle from "./ThemeToggle";
 interface NavbarProps {
   className?: string;
 }
@@ -9,7 +9,7 @@ const Navbar = ({ className }: NavbarProps) => {
       className={`w-dvw flex h-16 px-20 bg-optionHighlight items-center ${className}`}
     >
       <nav className="w-full">
-        <ul className="flex space-x-24 items-center justify-end">
+        <ul className="flex space-x-24 items-center justify-end color text-fontHighlight">
           <ThemeToggle />
           <li>Item One</li>
           <li>Item Two</li>
