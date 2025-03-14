@@ -7,7 +7,7 @@ import { experience } from "@/components/information/experienceList";
 const Experience = () => {
   return (
     <Fullscreen className="p-5 flex justify-center">
-      <div className="space-y-5">
+      <div className="space-y-10">
         <div className="flex justify-center">
           <h1 className="text-4xl font-bold underline dropShadow">
             My Experience

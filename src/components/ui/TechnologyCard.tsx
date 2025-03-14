@@ -4,17 +4,13 @@ import { TechnologyCardProps } from "../information/technologyList";
 
 const TechnologyCard = (props: TechnologyCardProps) => {
   return (
-    <Card className="h-40 w-40">
-      <CardHeader className="inline-block mx-auto">
-        <img
-          src={props.imgSrc}
-          alt={`${props.name}_icon`}
-          className="max-h-20"
-        />
-      </CardHeader>
-      <CardFooter className="inline-block mx-auto">
-        <h1>{props.name}</h1>
-      </CardFooter>
+    <Card className="h-30 w-30">
+      <div className="inline-block mx-auto">
+        <div>{props.icon ? <props.icon size={40} /> : props.name}</div>
+      </div>
+      <div className="inline-block mx-auto">
+        <h1 className="font-semibold">{props.name}</h1>
+      </div>
     </Card>
   );
 };
