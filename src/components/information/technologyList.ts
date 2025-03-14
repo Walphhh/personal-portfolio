@@ -1,3 +1,21 @@
+import {
+  SiTypescript,
+  SiJavascript,
+  SiPython,
+  SiHtml5,
+  SiCss3,
+  SiReact,
+  SiNodedotjs,
+  SiTailwindcss,
+  SiBookbub,
+  SiChakraui,
+  SiVite,
+  SiCanva,
+  SiFigma,
+} from "react-icons/si";
+import { FaBootstrap, FaJava } from "react-icons/fa";
+import { IconType } from "react-icons/lib";
+
 export type TechnologyType =
   | "all"
   | "frontend"
@@ -8,7 +26,7 @@ export type TechnologyType =
 
 export interface TechnologyCardProps {
   name: string;
-  imgSrc: string;
+  icon: IconType;
   proficiency: number;
   type: TechnologyType;
 }
@@ -16,85 +34,85 @@ export interface TechnologyCardProps {
 export const technologyList: TechnologyCardProps[] = [
   {
     name: "Typescript",
-    imgSrc: "src/assets/sillycat.jpg",
+    icon: SiTypescript,
     proficiency: 3,
     type: "language",
   },
   {
     name: "Javascript",
-    imgSrc: "src/assets/sillycat.jpg",
+    icon: SiJavascript,
     proficiency: 3,
     type: "language",
   },
   {
     name: "Java",
-    imgSrc: "src/assets/sillycat.jpg",
+    icon: FaJava,
     proficiency: 3,
     type: "language",
   },
   {
     name: "Python",
-    imgSrc: "src/assets/sillycat.jpg",
+    icon: SiPython,
     proficiency: 3,
     type: "language",
   },
   {
     name: "HTML",
-    imgSrc: "src/assets/sillycat.jpg",
+    icon: SiHtml5,
     proficiency: 3,
     type: "language",
   },
   {
     name: "CSS",
-    imgSrc: "src/assets/sillycat.jpg",
+    icon: SiCss3,
     proficiency: 3,
     type: "language",
   },
   {
     name: "React",
-    imgSrc: "src/assets/sillycat.jpg",
+    icon: SiReact,
     proficiency: 3,
     type: "frontend",
   },
   {
     name: "NodeJS",
-    imgSrc: "src/assets/sillycat.jpg",
+    icon: SiNodedotjs,
     proficiency: 3,
     type: "backend",
   },
   {
     name: "Tailwind",
-    imgSrc: "src/assets/sillycat.jpg",
+    icon: SiTailwindcss,
     proficiency: 3,
     type: "framework",
   },
   {
     name: "Bootstrap",
-    imgSrc: "src/assets/sillycat.jpg",
+    icon: FaBootstrap,
     proficiency: 3,
     type: "framework",
   },
   {
     name: "Chakra",
-    imgSrc: "src/assets/sillycat.jpg",
+    icon: SiChakraui,
     proficiency: 3,
     type: "framework",
   },
   {
     name: "Vite",
-    imgSrc: "src/assets/sillycat.jpg",
+    icon: SiVite,
     proficiency: 3,
     type: "framework",
   },
   {
     name: "Canva",
-    imgSrc: "src/assets/sillycat.jpg",
+    icon: SiCanva,
     proficiency: 3,
     type: "design",
   },
   {
     name: "Figma",
-    imgSrc: "src/assets/sillycat.jpg",
+    icon: SiFigma,
     proficiency: 3,
     type: "design",
   },
