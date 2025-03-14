@@ -2,6 +2,7 @@ import { createHashRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import Layout from "./components/ui/Layout";
 import Homepage from "./components/pages/Homepage";
+import { ThemeProvider } from "./components/contexts/ThemeContext";
 
 function App() {
   const router = createHashRouter([
@@ -19,9 +20,11 @@ function App() {
 
   return (
     <>
-      <div className="bg-background-0 text-fontDefault">
-        <RouterProvider router={router} />
-      </div>
+      <ThemeProvider>
+        <div className="bg-background-0 text-fontDefault">
+          <RouterProvider router={router} />
+        </div>
+      </ThemeProvider>
     </>
   );
 }

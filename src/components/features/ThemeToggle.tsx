@@ -1,12 +1,11 @@
 import React from "react";
 import { Button } from "../ui/button";
+import { useTheme } from "../contexts/ThemeContext";
 
 const ThemeToggle = () => {
-  const toggleTheme = () => {
-    document.body.classList.toggle("dark");
-  };
+  const { setTheme } = useTheme();
   return (
-    <Button id="toggleTheme" onClick={toggleTheme}>
+    <Button id="toggleTheme" onClick={setTheme}>
       ToggleMe
     </Button>
   );
