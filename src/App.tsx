@@ -19,7 +19,7 @@ function App() {
 
   return (
     <>
-      <div className="p-0">
+      <div className="bg-background-0 text-fontDefault">
         <RouterProvider router={router} />
       </div>
     </>

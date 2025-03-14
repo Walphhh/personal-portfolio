@@ -1,4 +1,4 @@
-import { ProjectCard as ProjectCardProps } from "@/components/information/projects";
+import { ProjectCard as ProjectCardProps } from "@/components/information/projectsList";
 import {
   Card,
   CardContent,

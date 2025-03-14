@@ -7,17 +7,17 @@ import {
   CardHeader,
   CardTitle,
 } from "./card";
-import { ExperienceCard as ExperienceCardInterface } from "@/components/information/experience";
+import { ExperienceCard as ExperienceCardInterface } from "@/components/information/experienceList";
 import { Briefcase } from "lucide-react";
 
 const ExperienceCard = (props: ExperienceCardInterface) => {
   const previousPositions = props.positions;
   return (
     <div className="flex space-x-10 ">
-      <div className="left-60  h-5 w-5 rounded-full border border-border bg-background flex items-center justify-center">
-        <Briefcase className="h-10 w-10 text-primary" />
+      <div className="h-7 w-7 p-1 rounded-full border border-border bg-background flex items-center justify-center">
+        <Briefcase className="h-10 w-10 text-primary " />
       </div>
-      <Card className="bg-background-1 max-w-250 p5">
+      <Card className="bg-background-1 max-w-250 p5 outline-outline shadow-md">
         <CardHeader>
           <div className="flex justify-between">
             <div className="flex space-x-5">
