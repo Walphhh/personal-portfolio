@@ -14,8 +14,8 @@ const ExperienceCard = (props: ExperienceCardInterface) => {
   const previousPositions = props.positions;
   return (
     <div className="flex space-x-10 ">
-      <div className="h-7 w-7 p-1 rounded-full border border-border bg-background flex items-center justify-center">
-        <Briefcase className="h-10 w-10 text-primary " />
+      <div className="h-7 w-7 p-1 rounded-full border border-fontDefault bg-fontDefault flex items-center justify-center">
+        <Briefcase className="h-10 w-10 stroke-background-0 " />
       </div>
       <Card className="bg-background-1 max-w-250 p5 outline-outline shadow-md">
         <CardHeader>

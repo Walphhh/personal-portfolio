@@ -30,7 +30,7 @@ const Layout = () => {
   return (
     <div className="">
       <Navbar
-        className={`fixed z-[9999] transition-transform duration-300 ${
+        className={`fixed z-100 transition-transform duration-300 ${
           isHidden ? "translate-y-0" : "-translate-y-full"
         }`}
       />
