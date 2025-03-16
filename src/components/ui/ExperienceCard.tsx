@@ -63,7 +63,6 @@ const ExperienceCard = (props: ExperienceCardInterface) => {
               </div>
             );
           })}
-        <CardFooter>Footer Here</CardFooter>
       </Card>
     </div>
   );
