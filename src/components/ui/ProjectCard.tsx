@@ -8,8 +8,7 @@ import {
   CardTitle,
 } from "./card";
 import { Button } from "./button";
-import { Badge } from "./badge";
-import { Briefcase, ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 import DisplayTags from "../features/DisplayTags";
 
 const ProjectCard = (props: ProjectCardProps) => {
