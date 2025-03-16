@@ -3,7 +3,6 @@ import Experience from "../features/Experience";
 import Hero from "../features/Hero";
 import Projects from "../features/Projects";
 import Technologies from "../features/Technologies";
-import ThemeToggle from "../features/ThemeToggle";
 
 const Homepage = () => {
   const { theme } = useTheme();

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Card, CardContent, CardFooter, CardHeader } from "./card";
+import { Card } from "./card";
 import { TechnologyCardProps } from "../information/technologyList";
 import { proficiencyBg } from "../information/technologyList";
 

@@ -3,8 +3,6 @@ import "./App.css";
 import Layout from "./components/ui/Layout";
 import Homepage from "./components/pages/Homepage";
 import { ThemeProvider } from "./components/contexts/ThemeContext";
-import Hero from "./components/features/Hero";
-import Experience from "./components/features/Experience";
 
 function App() {
   const router = createHashRouter([

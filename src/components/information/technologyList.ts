@@ -7,7 +7,6 @@ import {
   SiReact,
   SiNodedotjs,
   SiTailwindcss,
-  SiBookbub,
   SiChakraui,
   SiVite,
   SiCanva,

@@ -1,4 +1,3 @@
-import React from "react";
 import Fullscreen from "../ui/Fullscreen";
 import ProjectCard from "../ui/ProjectCard";
 import { projects } from "@/components/information/projectsList";

@@ -1,6 +1,4 @@
 import ThemeToggle from "./ThemeToggle";
-import { Link } from "react-router-dom";
-import { Button } from "../ui/button";
 import { useState, useRef, useEffect } from "react";
 
 const Navbar = () => {

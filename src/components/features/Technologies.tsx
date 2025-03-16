@@ -1,5 +1,5 @@
 import Fullscreen from "../ui/Fullscreen";
-import React, { useState } from "react";
+import { useState } from "react";
 import TechnologyCard from "../ui/TechnologyCard";
 import { technologyList } from "../information/technologyList";
 import { proficiencyBg } from "../information/technologyList";
