@@ -3,6 +3,8 @@ import Experience from "../features/Experience";
 import Hero from "../features/Hero";
 import Projects from "../features/Projects";
 import Technologies from "../features/Technologies";
+import BeeTrail1 from "../../assets/decoration/Bee Trail 1.png";
+import BeeTrail2 from "../../assets/decoration/Bee Trail 2.png";
 
 const Homepage = () => {
   const { theme } = useTheme();
@@ -10,7 +12,7 @@ const Homepage = () => {
     <>
       <Hero />
       <img
-        src="src/assets/decoration/Bee Trail 1.png"
+        src={BeeTrail1}
         alt="Bee_Trail_1"
         className={`sm:hidden xl:relative xl:-top-[400px] xl:block ${
           theme && `set-white`
@@ -20,7 +22,7 @@ const Homepage = () => {
         <Technologies />
       </div>
       <img
-        src="src/assets/decoration/Bee Trail 2.png"
+        src={BeeTrail2}
         alt="Bee_Trail_2"
         className={`z-1 sm:hidden xl:relative xl:-top-[920px] xl:block ${
           theme && `set-white`

@@ -4,6 +4,11 @@ import { Separator } from "../ui/separator";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import { Button } from "../ui/button";
 import { useTheme } from "../contexts/ThemeContext";
+import Scribble from "../../assets/decoration/scribble.png";
+import Github from "../../assets/icons/github.svg";
+import Linkedin from "../../assets/icons/linkedin.svg";
+import Placeholder from "../../assets/sillycat.jpg";
+import ResumePDF from "../../assets/Resume.pdf";
 
 const Hero = () => {
   const { theme } = useTheme();
@@ -21,12 +26,12 @@ const Hero = () => {
             }`}
           >
             <img
-              src="src/assets/decoration\scribble.png"
+              src={Scribble}
               alt="scribble"
               className="h-30 drop-shadow-lg"
             />
             <img
-              src="src/assets/decoration\scribble.png"
+              src={Scribble}
               alt="scribble"
               className="h-30 -rotate-90 drop-shadow-lg"
             />
@@ -46,11 +51,14 @@ const Hero = () => {
                   </h1>
                 </div>
                 <div className="flex items-center space-x-5 drop-shadow-lg">
-                  <Button className="hover:cursor-pointer ">Download CV</Button>
-
+                  <a href={ResumePDF} download="Resume_Dagondon.pdf">
+                    <Button className="hover:cursor-pointer">
+                      Download CV
+                    </Button>{" "}
+                  </a>
                   <a href="">
                     <img
-                      src="src/assets/icons/github.svg"
+                      src={Github}
                       alt="github_icon"
                       className={`size-12 hover:opacity-80 ${
                         theme && `set-white`
@@ -59,7 +67,7 @@ const Hero = () => {
                   </a>
                   <a href="">
                     <img
-                      src="src/assets/icons/linkedin.svg"
+                      src={Linkedin}
                       alt="linkedin_icon"
                       className={`size-15 hover:opacity-80 ${
                         theme && `set-white`
@@ -74,7 +82,7 @@ const Hero = () => {
               />
 
               <Avatar className="w-50 h-50 drop-shadow-lg hide-on-small">
-                <AvatarImage src="src\assets\sillycat.jpg" />
+                <AvatarImage src={Placeholder} />
                 <AvatarFallback>CAT</AvatarFallback>
               </Avatar>
             </div>
@@ -85,12 +93,12 @@ const Hero = () => {
             }`}
           >
             <img
-              src="src/assets/decoration/scribble.png"
+              src={Scribble}
               alt="scribble"
               className="h-30 rotate-90 drop-shadow-lg"
             />
             <img
-              src="src/assets/decoration/scribble.png"
+              src={Scribble}
               alt="scribble"
               className="h-30 rotate-180 drop-shadow-lg"
             />
