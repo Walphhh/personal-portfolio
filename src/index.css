@@ -125,8 +125,8 @@
 }
 
 @theme {
-  --color-background-0: #fff9e5;
-  --color-background-1: #faf1e1;
+  --color-background-0: #faf1e1;
+  --color-background-1: #fdf7eb;
   --color-background-2: #faf1e1;
   --color-optionHighlight: #fff4ae;
   --color-fontDefault: #242424;
@@ -162,4 +162,8 @@
 
 .set-white {
   @apply filter-[brightness(0)_saturate(100%)_invert(100%)_sepia(37%)_saturate(0%)_hue-rotate(317deg)_brightness(104%)_contrast(98%)];
+}
+
+.transition-background {
+  @apply transition-colors duration-300 ease-in-out;
 }
