@@ -7,9 +7,13 @@ import { useTheme } from "../contexts/ThemeContext";
 
 const Hero = () => {
   const { theme } = useTheme();
+
   return (
     <>
-      <Fullscreen className="font-Figtree relative z-9 p-5 flex items-center justify-center">
+      <Fullscreen
+        id="hero-section"
+        className="font-Figtree relative z-9 p-5 flex items-center justify-center"
+      >
         <div className="flex space-x-5">
           <div
             className={`scribble-container flex flex-col space-y-55 ${
@@ -42,7 +46,7 @@ const Hero = () => {
                   </h1>
                 </div>
                 <div className="flex items-center space-x-5 drop-shadow-lg">
-                  <Button className="hover:cursor-pointer">Download CV</Button>
+                  <Button className="hover:cursor-pointer ">Download CV</Button>
 
                   <a href="">
                     <img

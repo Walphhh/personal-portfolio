@@ -5,7 +5,7 @@ import { projects } from "@/components/information/projectsList";
 
 const Projects = () => {
   return (
-    <Fullscreen className="p-8 space-y-10 px-8 lg:px-48 ">
+    <Fullscreen id="projects-section" className="p-8 space-y-10 px-8 lg:px-48 ">
       <div className="flex justify-center">
         <h1 className="text-4xl font-bold underline dropShadow">My Projects</h1>
       </div>
