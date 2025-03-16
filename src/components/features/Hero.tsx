@@ -56,7 +56,11 @@ const Hero = () => {
                       Download CV
                     </Button>{" "}
                   </a>
-                  <a href="">
+                  <a
+                    href="https://github.com/Walphhh"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <img
                       src={Github}
                       alt="github_icon"
@@ -65,7 +69,11 @@ const Hero = () => {
                       }`}
                     />
                   </a>
-                  <a href="">
+                  <a
+                    href="https://www.linkedin.com/in/ralphdagondon/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <img
                       src={Linkedin}
                       alt="linkedin_icon"
