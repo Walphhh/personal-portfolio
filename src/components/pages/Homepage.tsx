@@ -23,11 +23,11 @@ const Homepage = () => {
       <img
         src="src/assets/decoration/Bee Trail 2.png"
         alt="Bee_Trail_2"
-        className={`z-1 sm:hidden xl:relative xl:-top-[815px] xl:block ${
+        className={`z-1 sm:hidden xl:relative xl:-top-[920px] xl:block ${
           theme && `set-white`
         }`}
       />
-      <div className="xl:-mt-248">
+      <div className="xl:-mt-278">
         <Experience />
       </div>
       <Projects />
