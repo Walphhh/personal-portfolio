@@ -26,31 +26,6 @@ const Navbar = () => {
     };
   }, []);
 
-  // Handles when mouse hovers over the Navbar area
-  // useEffect(() => {
-  //   const navbar = navbarRef.current;
-
-  //   if (navbar) {
-  //     const handleEnter = () => {
-  //       console.log("mouse entered navbar area");
-  //       setShowing(false);
-  //     };
-
-  //     const handleLeave = () => {
-  //       console.log("mouse left navbar area");
-  //       setShowing(true);
-  //     };
-
-  //     navbar.addEventListener("mouseenter", handleEnter);
-  //     navbar.addEventListener("mouseleave", handleLeave);
-
-  //     return () => {
-  //       navbar.removeEventListener("mouseenter", handleEnter);
-  //       navbar.removeEventListener("mouseleave", handleLeave);
-  //     };
-  //   }
-  // });
-
   // Handles Scrolling to a Section
   const scrollTo = (sectionID: string) => {
     const section = document.getElementById(sectionID);
@@ -67,7 +42,7 @@ const Navbar = () => {
         }`}
       >
         <nav className="w-full">
-          <ul className="flex space-x-24 items-center justify-end text-l font-semibold text-fontHighlight">
+          <ul className="flex justify-between md:space-x-24 md:justify-end items-center  text-l font-semibold text-fontHighlight">
             <li>
               <button
                 onClick={() => scrollTo("technologies-section")}

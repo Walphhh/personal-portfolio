@@ -26,11 +26,11 @@ const Technologies = () => {
       className="flex min-h-180 justify-center p-5"
     >
       <div className="space-y-10 flex flex-col items-center">
-        <h1 className="text-4xl font-semibold underline drop-shadow-md">
+        <h1 className="text-4xl flex-wrap font-semibold underline drop-shadow-md">
           Technologies I've Worked With
         </h1>
 
-        <div className="flex p-3 bg-background-1 rounded-xl shadow-md">
+        <div className="flex-grow justify-center p-3 bg-background-1 rounded-xl shadow-md">
           {technologyTypes.map((name) => {
             return (
               <button
@@ -60,7 +60,7 @@ const Technologies = () => {
           })}
         </div>
         <div className=" max-w-6xl p-10 bg-background-1 border-[#E9E9E9] rounded-xl shadow-md">
-          <div className="grid lg:grid-cols-4 gap-5 sm:grid-cols-3">
+          <div className="grid grid-cols-3 lg:grid-cols-4 gap-5 ">
             {highlited === "All" ? (
               <>
                 {technologyList.map((technology) => {

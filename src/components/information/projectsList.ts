@@ -46,7 +46,7 @@ export const projects: ProjectCard[] = [
     description: "A website showcasing my portfolio",
     imgSrc: Portfolio,
     tags: ["React", "Typescript", "Tailwind"],
-    githubUrl: "",
+    githubUrl: "https://github.com/Walphhh/personal-portfolio",
   },
   {
     title: "Christmas Card",

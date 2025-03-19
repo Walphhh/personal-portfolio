@@ -14,21 +14,21 @@ const Homepage = () => {
       <img
         src={BeeTrail1}
         alt="Bee_Trail_1"
-        className={`sm:hidden xl:relative xl:-top-[400px] xl:block ${
+        className={`hidden 2xl:relative 2xl:-top-[400px] 2xl:block ${
           theme && `set-white`
         }`}
       />
-      <div className="relative z-10 xl:-mt-125">
+      <div className="relative z-10 2xl:-mt-125">
         <Technologies />
       </div>
       <img
         src={BeeTrail2}
         alt="Bee_Trail_2"
-        className={`z-1 sm:hidden xl:relative xl:-top-[920px] xl:block ${
+        className={`z-1 hidden 2xl:relative 2xl:-top-[920px] 2xl:block ${
           theme && `set-white`
         }`}
       />
-      <div className="xl:-mt-278">
+      <div className="2xl:-mt-278">
         <Experience />
       </div>
       <Projects />
