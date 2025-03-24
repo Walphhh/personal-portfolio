@@ -7,8 +7,8 @@ import { useTheme } from "../contexts/ThemeContext";
 import Scribble from "../../assets/decoration/scribble.png";
 import Github from "../../assets/icons/github.svg";
 import Linkedin from "../../assets/icons/linkedin.svg";
-import Placeholder from "../../assets/sillycat.jpg";
 import ResumePDF from "../../assets/Resume.pdf";
+import Headshot from "../../assets/Ralph_Headshot.jpg";
 
 const Hero = () => {
   const { theme } = useTheme();
@@ -90,8 +90,11 @@ const Hero = () => {
               />
 
               <Avatar className="w-50 h-50 drop-shadow-lg hide-on-small">
-                <AvatarImage src={Placeholder} />
-                <AvatarFallback>CAT</AvatarFallback>
+                <AvatarImage
+                  src={Headshot}
+                  className="zoomed-in object-contain mt-4"
+                />
+                <AvatarFallback>Headshot</AvatarFallback>
               </Avatar>
             </div>
           </div>

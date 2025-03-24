@@ -167,3 +167,7 @@
 .transition-background {
   @apply transition-colors duration-300 ease-in-out;
 }
+
+.zoomed-in {
+  @apply transform-[scale(1.8)];
+}
